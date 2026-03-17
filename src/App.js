@@ -27,6 +27,7 @@ import ECommImage from "./assets/E-CommImg.webp";
 import PortfolioImg from "./assets/PortfolioImg.png";
 import TourImage from "./assets/Tours&TravelsImage.jpg";
 import founderImage from "./assets/MyOldImg.jpg";
+import LogoImg from "./assets/minetree-logo.png";
 
 /* ANIMATION */
 const fadeUp = {
@@ -104,7 +105,10 @@ function App() {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="nav-container">
-          <div className="nav-brand">Minetree<span>.</span></div>
+			<div className="nav-brand">
+			  <img src={LogoImg} alt="Minetree Logo" className="nav-logo" />
+			  <span>Minetree.</span>
+			</div>
           <div className="nav-links">
             <a href="#services">Services</a>
             <a href="#tech">Tech Stack</a>
