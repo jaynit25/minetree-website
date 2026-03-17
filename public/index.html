@@ -2,315 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/minetreefavicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-	
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="theme-color" content="#ff4e47" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Minetree Technologies | Scalable Software & SaaS Solutions</title>
+    <meta name="title" content="Minetree Technologies | Scalable Software & SaaS Solutions" />
+    <meta name="description" content="Minetree Technologies, led by Jaynit Nagar, provides world-class Software Engineering, SaaS Infrastructure, and Cloud-native systems." />
+    <meta name="keywords" content="Minetree Technologies, Jaynit Nagar, Web Development, SaaS, Cloud Solutions, Software Engineering" />
+    <meta name="author" content="Jaynit Nagar" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://minetree-technologies.onrender.com/" />
+    <meta property="og:title" content="Minetree Technologies | Modern Software Platform" />
+    <meta property="og:description" content="Engineering visual scale with high-performance interfaces and cloud-native systems." />
+    <meta property="og:image" content="%PUBLIC_URL%/minetreelogo512.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://minetree-technologies.onrender.com/" />
+    <meta property="twitter:title" content="Minetree Technologies | Modern Software Platform" />
+    <meta property="twitter:description" content="Build, optimize, and deliver world-class digital products with Jaynit Nagar." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/minetreelogo512.png" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/minetreelogo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-/* Reset and body */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9fafb;  /* very light background */
-  color: #333;
-}
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: #ffffff;
-  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.navbar h2 {
-  color: #0f172a;
-}
-
-.navbar a {
-  margin: 0 15px;
-  color: #0f172a;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: #3b82f6;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 120px 20px 80px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  color: white;
-}
-
-.hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.3em;
-  font-weight: 700;
-}
-
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 0.6em;
-  font-weight: 500;
-}
-
-.founder {
-  font-size: 1rem;
-  font-style: italic;
-  color: #dbeafe;
-  margin-bottom: 30px;
-}
-
-.hero-buttons button {
-  margin: 0 10px;
-  padding: 12px 28px;
-  font-weight: 600;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.primary {
-  background: #2563eb;
-  color: white;
-  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
-}
-
-.primary:hover {
-  background: #1e40af;
-  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.6);
-}
-
-.secondary {
-  background: transparent;
-  color: #2563eb;
-  border: 2px solid #2563eb;
-}
-
-.secondary:hover {
-  background: #2563eb;
-  color: white;
-}
-
-/* SECTIONS */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1em;
-  color: #0f172a;
-  font-weight: 700;
-}
-
-/* SERVICES GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.card {
-  background: white;
-  border-radius: 16px;
-  padding: 30px 20px;
-  box-shadow: 0 4px 20px rgb(0 0 0 / 0.07);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgb(0 0 0 / 0.12);
-}
-
-.icon {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #2563eb;
-}
-
-.card h3 {
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: #0f172a;
-}
-
-/* UI/UX SECTION */
-.section.dark {
-  background: #e0e7ff;
-  color: #1e293b;
-}
-
-.section.dark h2 {
-  color: #1e293b;
-}
-
-.section.dark p {
-  font-size: 1.15rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* LEARN & CONTACT CONTAINER SIDE BY SIDE */
-.learn-contact-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 30px;
-}
-
-.course, 
-.form {
-  background: white;
-  padding: 30px 25px;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgb(0 0 0 / 0.07);
-  flex: 1 1 400px;
-  max-width: 500px;
-}
-
-.course h3 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-  color: #2563eb;
-}
-
-.price {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #22c55e;
-  margin-bottom: 15px;
-}
-
-.course ul {
-  text-align: left;
-  margin-left: 20px;
-  margin-bottom: 25px;
-  color: #475569;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.course ul li {
-  margin-bottom: 8px;
-}
-
-.course button {
-  background: #2563eb;
-  color: white;
-  border-radius: 30px;
-  padding: 12px 32px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.course button:hover {
-  background: #1e40af;
-}
-
-/* FORM */
-.form input,
-.form select,
-.form textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 14px 15px;
-  font-size: 1rem;
-  border: 1.5px solid #cbd5e1;
-  border-radius: 8px;
-  transition: border-color 0.3s ease;
-}
-
-.form input:focus,
-.form select:focus,
-.form textarea:focus {
-  outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 8px #2563ebaa;
-}
-
-.form textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.form button {
-  background: #2563eb;
-  color: white;
-  padding: 14px 0;
-  border-radius: 30px;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  margin-top: 10px;
-}
-
-.form button:hover {
-  background: #1e40af;
-}
-
-/* FOOTER */
-footer {
-  padding: 25px 20px;
-  text-align: center;
-  background: #2563eb;
-  color: white;
-  font-weight: 600;
-  font-size: 1rem;
-}
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
