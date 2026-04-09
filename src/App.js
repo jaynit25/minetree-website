@@ -26,7 +26,7 @@ import SAASImage from "./assets/SAASDashImg.png";
 import ECommImage from "./assets/E-CommImg.webp";
 import PortfolioImg from "./assets/PortfolioImg.png";
 import TourImage from "./assets/Tours&TravelsImage.jpg";
-import founderImage from "./assets/MyOldImg.jpg";
+import founderImage from "./assets/ProfileImg.jpeg";
 import LogoImg from "./assets/minetree-logo.png";
 
 /* ANIMATION */
@@ -168,11 +168,11 @@ function App() {
           </motion.div>
           <motion.div className="about-content" initial={{ opacity: 0, x: 60 }} whileInView={{ opacity: 1, x: 0 }}>
             <span className="about-tag">About Minetree</span>
-            <h2>Led by Jaynit Nagar</h2>
+            <h2>Led by J.D.N</h2>
             <p>Minetree Technologies helps startups and companies build scalable digital products using modern technologies.</p>
             <p>Our focus is delivering high performance applications, cloud-ready infrastructure and exceptional user experience.</p>
             <div className="founder-box">
-              <h3>Jaynit Nagar</h3>
+              <h3>J.D.N</h3>
               <span>Founder & CEO</span>
               <p>Passionate software engineer focused on building modern SaaS platforms, scalable web applications and innovative digital products.</p>
             </div>
